@@ -16,9 +16,6 @@ class Instrument(models.Model):
     category = models.CharField(max_length=100)
     condition = models.CharField(max_length=50)
 
-    # Seller Information (if applicable)
-    seller_name = models.CharField(max_length=255, null=True, blank=True)
-    seller_contact = models.EmailField(null=True, blank=True)
 
     # Timestamps
     created_at = models.DateTimeField(auto_now_add=True)

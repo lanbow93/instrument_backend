@@ -6,4 +6,4 @@ class InstrumentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Instrument
         # the fields that should be included in the serialized output
-        fields = ['name', 'description', 'image', 'price', 'quanity', ]
+        fields = ['name', 'description', 'image', 'price', 'quanity_available', 'brand', 'category', 'condition', 'created_at', 'updated_at']
